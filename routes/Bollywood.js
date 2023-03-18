@@ -2,7 +2,7 @@ const express=require('express');
 const bollyapi=require('../Api/Bollywood');
 
 
-const bolly=express.Router();
-bolly.router('/bollywood').get(bollyapi.apiController);
+const bollywood=express.Router();
+bollywood.route('/bollywood').get(bollyapi.apiController);
 
-module.exports=bolly
+module.exports=bollywood
