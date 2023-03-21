@@ -6,6 +6,7 @@ const fitness=require('./routes/Fitness');
 const food=require('./routes/Food');
 const hollywood=require("./routes/Hollywood");
 const technology=require('./routes/Technology');
+const home=require('./routes/Home')
 
 
 app.use(cors());
@@ -14,6 +15,7 @@ app.use("/",fitness);
 app.use("/",food);
 app.use("/",hollywood);
 app.use("/",technology);
+app.use("/",home)
 
 app.listen(6600,()=>{
     console.log("server is running ")
